@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+  cursor: url("https://assets.website-files.com/5e87e737ee7085b9ba02c101/5e8a415aacdbb524713eb277_cursor.png")
+      16 16,
+    pointer;
+}
+
+button,
+nav ul,
+.thumb,
+li,
+a {
+  cursor: url("https://assets.website-files.com/5e87e737ee7085b9ba02c101/5e8a4a6206f67059bcd497ce_cursor-pointer.png")
+      16 16,
+    pointer;
+}
+
+.clamp-p-hero {
+  font-size: clamp(2rem, 9vw, 7rem);
+}
+.clamp-p-about {
+  font-size: clamp(2rem, 1vw, 2rem);
+}
+/* .clamp-p2-about{
+  font-size: clamp(2rem, 2vw, 4rem);
+} */
+
+.boxshadow {
+  box-shadow: 4px 5px 1px 1px black;
+}
+
+.boxshadowInput {
+  box-shadow: 6px 1px 1px 1px black;
+}
+
+.boxshadowInput:hover {
+  box-shadow: 4px 5px 1px 1px black;
+}

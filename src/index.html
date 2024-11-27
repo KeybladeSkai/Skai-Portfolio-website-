@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./CSS/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="icon" href="./Images/skai.jpeg" type="image/jpeg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Skai</title>
+  </head>
+  <body>
+    <section
+      class="h-[100vh] py-10 px-8 md:px-12 lg:px-18 flex flex-col gap-10 scroll-smooth bg-[#f9f5f2]"
+    >
+      <div class="flex justify-between text-[1.2rem] h-[10vh] items-center">
+        <a href="">
+          <p>Skai</p>
+        </a>
+        <nav class="hidden md:flex cursor-pointer">
+          <ul class="flex gap-8 list-none cursor-pointer">
+            <a href="./HTML/resume.html" target="_blank">
+              <li class="hover:underline">Resume</li>
+            </a>
+            <a href="#projects">
+              <li
+                class="hover:underline"
+              >
+                Projects
+              </li>
+            </a>
+            <a href="#contact">
+              <li class="hover:underline">Contact</li>
+            </a>
+            <li class="hover:underline">Socials</li>
+          </ul>
+        </nav>
+        <i id="open" class="bi bi-list block md:hidden thumb text-[30px] relative"></i>
+        
+        <nav style="background-image: url();" id="NavBar" class="absolute cursor-pointer top-0 right-0 left-0 py-20  bg-white thumb  hidden">
+          <i id="close" class="bi bi-x-lg text-black absolute right-[30px] top-[20px] text-[1.2rem] z-10"></i>
+          <ul class="flex flex-col gap-8 list-none cursor-pointer text-center  text-black">
+            <a href="./PDF/myResume.pdf" target="_blank">
+              <li    class="hover:bg-black hover:text-white p-4">Resume</li>
+            </a>
+            <a href="#projects">
+              <li
+                class="hover:bg-black hover:text-white p-4"
+              >
+                Projects
+              </li>
+            </a>
+            <a href="#contact">
+              <li       class="hover:bg-black hover:text-white p-4">Contact</li>
+            </a>
+            <li       class="hover:bg-black hover:text-white p-4">Socials</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="h-[90vh] flex flex-col items-center justify-around">
+        <img src="./Images/skai.jpeg" class="w-[250px]" />
+        <p class="clamp-p-hero">SuperSaiyanSkai</p>
+        <p class="text-center clamp-p2-hero">
+          I'm a software Engineer, I love building things that work.
+        </p>
+      </div>
+    </section>
+    <section
+      class="px-8 md:px-12 lg:px-18 py-36 flex-col-reverse flex lg:gap-24 items-center relative "
+    >
+      <div class="h-[100%] lg:w-[52%] flex flex-col gap-10 italic">
+        <p>
+          "A computer would deserve to be called intelligent if it could deceive
+          a human into believing that it was human." -
+          <span class="not-italic">Alan Turing</span>
+        </p>
+        <p>
+          “A new idea comes suddenly and in a rather intuitive way, but
+          intuition is nothing but the outcome of earlier intellectual
+          experience.” -<span class="not-italic"> Albert Einstein</span>
+        </p>
+        <p>
+          "People who don’t know how to program are at a serious disadvantage" -
+          <span class="not-italic"> Elon Musk</span>
+        </p>
+        <div class="flex">
+          <img
+            src="./Images/alan.jpeg"
+            alt=""
+            class="w-[80px] h-[80px] object-cover rounded-full z-50 boxshadow"
+          />
+          <img
+            src="./Images/albert.jpg"
+            alt=""
+            class="w-[80px] h-[80px] object-cover rounded-full z-20 -ml-5 boxshadow"
+          />
+          <img
+            src="./Images/elon.webp"
+            alt=""
+            class="w-[80px] h-[80px] object-cover rounded-full z-10 -ml-5 boxshadow"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="projects"
+      class="mt-[20px] px-8 md:px-12 lg:px-18 py-36 flex gap-24 justify-center flex-col items-center bg-[#f9f5f2]"
+    >
+      <div>
+        <h2 class="clamp-p2-about text-center text-[3.2rem]">My Projects</h2>
+      </div>
+      <div
+        class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 place-content-center"
+      >
+        <div class="rounded-2xl shadow-lg overflow-clip transition-transform
+        duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl bg-white">
+        <img
+          src="./Images/thunder.jpeg"
+          alt=""
+          class="w-[100%] h-[12rem] object-cover sm:object-contain lg:object-cover"
+        />
+        <div class="p-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-[1.2rem] font-bold uppercase">ThunderPals</h2>
+            <p>completed</p>
+          </div>
+          <p class="mt-[10px] clamp-p2-hero">
+            A responsive social app similar to twitter, for posting, uploading,
+            and deleting content.
+          </p>
+          <div class="flex gap-2 mt-[20px]">
+            <img
+              src="./Images/icons/react.png"
+              alt="react.js"
+              class="w-[30px] h-[30px]"
+            />
+            <img
+              src="./Images/icons/redux.svg"
+              alt=""
+              class="w-[30px] h-[30px]"
+            />
+            <img
+              src="./Images/icons/reactRouter.svg"
+              alt=""
+              class="w-[30px] h-[30px]"
+            />
+            <img
+              src="./Images/icons/tailwindcss.svg"
+              alt=""
+              class="w-[30px] h-[30px]"
+            />
+            <img
+              src="./Images/icons/firebasse.svg"
+              alt=""
+              class="w-[30px] h-[30px]"
+            />
+          </div>
+          <div class="flex gap-2 mt-[20px] mb-1">
+            <a href="https://thunder-pals.vercel.app" target="_blank">
+
+              <button
+                class="border-2 border-black py-2 font-bold w-[8rem] hover:bg-black hover:text-white hover:opacity-85 clamp-p2-hero text-[.9rem]"
+              >
+                live site
+              </button>
+            </a>
+            <a href="https://github.com/KeybladeSkai/Thunder-pals.git" target="_blank">
+            <button
+              class="border-2 border-black py-2 font-bold w-[8rem] bg-black text-white hover:opacity-85 flex gap-2 items-center justify-center text-[.8rem]"
+            >
+              <img
+                src="./Images/icons/github-svgrepo-com.svg"
+                alt=""
+                class="w-[20px] h-[20px]"
+              />
+              GitHub
+            </button>
+          </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="rounded-2xl shadow-lg overflow-clip transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl bg-white"
+      >
+        <img
+          src="./Images/Wordy.png"
+          alt=""
+          class="w-[100%] h-[12rem] object-cover"
+        />
+        <div class="p-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-[1.2rem] font-bold uppercase">Wordy</h2>
+            <p>completed</p>
+          </div>
+          <p class="mt-[10px] clamp-p2-hero">
+            A dictionary website designed for exploring word meanings, featuring
+            voice capability for pronunciation.
+          </p>
+          <div class="flex gap-2 mt-[20px]">
+            <img
+              src="./Images/icons/react.png"
+              alt="react.js"
+              class="w-[30px] h-[30px]"
+            />
+            <img
+              src="./Images/icons/reactRouter.svg"
+              alt=""
+              class="w-[30px] h-[30px]"
+            />
+            <img
+              src="./Images/icons/tailwindcss.svg"
+              alt=""
+              class="w-[30px] h-[30px]"
+            />
+          </div>
+          <a href="https://dictionary-mu-navy.vercel.app/" target="_blank">
+          <div class="flex gap-2 mt-[20px] mb-1">
+            <button
+              class="border-2 border-black py-2 font-bold w-[8rem] hover:bg-black hover:text-white hover:opacity-85 text-[.8rem]"
+            >
+              live site
+            </button>
+          </a>
+          <a href="https://github.com/KeybladeSkai/dictionary.git" target="_blank">
+            <button
+              class="border-2 border-black py-2 font-bold w-[8rem] bg-black text-white hover:opacity-85 flex gap-2 items-center justify-center text-[.8rem]"
+            >
+              <img
+                src="./Images/icons/github-svgrepo-com.svg"
+                alt=""
+                class="w-[20px] h-[20px]"
+              />
+              GitHub
+            </button>
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="rounded-2xl shadow-lg overflow-clip transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl bg-white"
+      >
+        <img
+          src="./Images/morgul.png"
+          alt=""
+          class="w-[100%] h-[12rem] object-cover sm:object-contain lg:object-cover"
+        />
+        <div class="p-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-[1.2rem] font-bold uppercase">Morgul</h2>
+            <p>completed</p>
+          </div>
+          <p class="mt-[10px] clamp-p2-hero">
+            Morgul is a responsive e-commerce that enables users to browse,
+            search products.
+          </p>
+          <div class="flex gap-2 mt-[20px]">
+            <img
+              src="./Images/icons/react.png"
+              alt="react.js"
+              class="w-[30px] h-[30px]"
+            />
+            <img
+              src="./Images/icons/reactRouter.svg"
+              alt=""
+              class="w-[30px] h-[30px]"
+            />
+            <img
+              src="./Images/icons/tailwindcss.svg"
+              alt=""
+              class="w-[30px] h-[30px]"
+            />
+          </div>
+          <a href="https://morgul-ayotide-s-projects.vercel.app/" target="_blank">
+          <div class="flex gap-2 mt-[20px] mb-1">
+            <button
+              class="border-2 border-black py-2 font-bold w-[8rem] hover:bg-black hover:text-white hover:opacity-85 text-[.8rem]"
+            >
+              live site
+            </button>
+          </a>
+          <a href="https://github.com/KeybladeSkai/Morgul.git" target="_blank">
+            <button
+              class="border-2 border-black py-2 font-bold w-[8rem] bg-black text-white hover:opacity-85 flex gap-2 items-center justify-center text-[.8rem]"
+            >
+              <img
+                src="./Images/icons/github-svgrepo-com.svg"
+                alt=""
+                class="w-[20px] h-[20px]"
+              />
+              GitHub
+            </button>
+          </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="rounded-2xl shadow-lg overflow-clip transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl bg-white"
+      >
+        <img
+          src="./Images/animePage.png"
+          alt=""
+          class="h-[12rem] object-cover sm:object-contain lg:object-cover w-[100%]"
+        />
+        <div class="p-4">
+          <div class="flex items-center justify-between">
+            <h2 class="font-bold uppercase text-[1.2rem]">AnimeSpot</h2>
+            <p>completed</p>
+          </div>
+          <p class="mt-[10px] clamp-p2-hero">
+            AnimeSpot is a responsive landing page, showcasing anime characters,
+            series, and movies.
+          </p>
+          <div class="flex gap-2 mt-[20px]">
+            <img
+              src="./Images/icons/html.svg"
+              alt="react.js"
+              class="w-[30px] h-[30px]"
+            />
+            <img
+              src="./Images/icons/css-3-svgrepo-com.svg"
+              alt=""
+              class="w-[30px] h-[30px]"
+            />
+            <img
+              src="./Images/icons/js-svgrepo-com.svg"
+              alt=""
+              class="w-[30px] h-[30px]"
+            />
+          </div>
+          <div class="flex gap-2 mt-[20px] mb-1">
+            <a href="https://dictionary-mu-navy.vercel.app/" target="_blank">
+            <button
+              class="border-2 border-black py-2 font-bold w-[8rem] hover:bg-black hover:text-white hover:opacity-85 text-[.8rem]"
+            >
+              live site
+            </button>
+          </a>
+          <a href="https://github.com/KeybladeSkai/Responsive-Anime-website.git" target="_blank">
+            <button
+              class="border-2 border-black py-2 font-bold w-[8rem] bg-black text-white hover:opacity-85 flex gap-2 items-center justify-center text-[.8rem]"
+            >
+              <img
+                src="./Images/icons/github-svgrepo-com.svg"
+                alt=""
+                class="w-[20px] h-[20px]"
+              />
+              GitHub
+            </button>
+          </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="rounded-2xl shadow-lg overflow-clip transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl bg-white"
+      >
+        <img
+          src="./Images/undistracto.jpeg"
+          alt=""
+          class="w-[100%] h-[12rem] object-cover sm:object-contain lg:object-cover"
+        />
+        <div class="p-4">
+          <div class="flex items-center justify-between">
+            <h2 class="font-bold uppercase text-[1.2rem]">UnDistracto</h2>
+            <p>completed</p>
+          </div>
+          <p class="mt-[10px] clamp-p2-hero">
+            A browser extension that replaces all thumbnails and images with
+            Shadow from Sonic to avoid distraction.
+          </p>
+          <div class="flex gap-2 mt-[20px]">
+            <img
+              src="./Images/icons/html.svg"
+              alt="react.js"
+              class="w-[30px] h-[30px]"
+            />
+
+            <img
+              src="./Images/icons/js-svgrepo-com.svg"
+              alt=""
+              class="w-[30px] h-[30px]"
+            />
+          </div>
+          <div class="flex gap-2 mt-[20px] mb-1">
+            <a href="https://github.com/KeybladeSkai/FireFoxExtension.git" target="_blank">
+            <button
+              class="border-2 border-black py-2 font-bold w-[8rem] bg-black text-white hover:opacity-85 flex gap-2 items-center justify-center text-[.8rem]"
+            >
+              <img
+                src="./Images/icons/github-svgrepo-com.svg"
+                alt=""
+                class="w-[20px] h-[20px]"
+              />
+              GitHub
+            </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="rounded-2xl shadow-lg overflow-clip transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl bg-white"
+      >
+        <img
+          src="./Images/superpile.jpeg"
+          alt=""
+          class="w-[100%] h-[12rem] object-cover sm:object-contain lg:object-cover"
+        />
+        <div class="p-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-[1.2rem] font-bold uppercase">SuperPile</h2>
+            <p>Building</p>
+          </div>
+          <p class="mt-[10px] clamp-p2-hero">
+            A website that allows you to organize and save links for future use,
+            presenting each link in a visually appealing format with its
+            metadata displayed.
+          </p>
+          <div class="flex gap-2 mt-[20px]">
+            <img
+              src="./Images/icons/react.png"
+              alt="react.js"
+              class="w-[30px] h-[30px]"
+            />
+            <img
+              src="./Images/icons/redux.svg"
+              alt="react.js"
+              class="w-[30px] h-[30px]"
+            />
+
+            <img
+              src="./Images/icons/reactRouter.svg"
+              alt=""
+              class="w-[30px] h-[30px]"
+            />
+            <img
+              src="./Images/icons/nodejs.svg"
+              alt=""
+              class="w-[30px] h-[30px]"
+            />
+            <img
+              src="./Images/icons/express-svgrepo-com.svg"
+              alt=""
+              class="w-[30px] h-[30px]"
+            />
+            <img
+              src="./Images/icons/mongo-svgrepo-com.svg"
+              alt=""
+              class="w-[30px] h-[30px]"
+            />
+          </div>
+          <div class="flex gap-2 mt-[20px] mb-1">
+            <a href="./HTML/building.html">
+            <button
+              class="border-2 border-black py-2 font-bold w-[8rem] hover:bg-black hover:text-white hover:opacity-85 text-[.8rem]"
+            >
+              live site
+            </button>
+          </a>
+          <a href="./HTML/building.html">
+            <button
+              class="border-2 border-black py-2 font-bold w-[8rem] bg-black text-white hover:opacity-85 flex gap-2 items-center justify-center text-[.8rem]"
+            >
+              <img
+                src="./Images/icons/github-svgrepo-com.svg"
+                alt=""
+                class="w-[20px] h-[20px]"
+              />
+              GitHub
+            </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="skills"
+      class="mt-[20px] px-8 md:px-12 lg:px-18 py-36 flex gap-24 justify-center flex-col"
+    >
+      <div class="flex flex-col gap-24">
+        <div>
+          <h2 class="clamp-p2-about text-center text-[3.2rem]">My Skills</h2>
+        </div>
+
+        <div class="grid grid-col-1 md:grid-col-2 lg:grid-cols-3 gap-10">
+          <div class="flex flex-col items-center gap-6">
+            <h3 class="text-[1.5rem]">Frontend</h3>
+            <div
+              class="flex gap-4 w-[210px] items-center justify-center flex-wrap text-center"
+            >
+              <div class="flex flex-col">
+                <div
+                  class="h-[50px] w-[50px] bg-orange-300 rounded-full flex justify-center items-center"
+                >
+                  <img
+                    src="./Images/icons/html.svg"
+                    alt=""
+                    class="w-[30px] h-[30px]"
+                  />
+                </div>
+                <h3 class="text-[.8rem]">HTML5</h3>
+              </div>
+              <div class="flex gap-2">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="h-[50px] w-[50px] bg-blue-300 rounded-full flex justify-center items-center"
+                  >
+                    <img
+                      src="./Images/icons/css-3-svgrepo-com.svg"
+                      alt=""
+                      class="w-[30px] h-[30px]"
+                    />
+                  </div>
+                  <h3 class="text-[.8rem]">CSS</h3>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="h-[50px] w-[50px] bg-yellow-200 rounded-full flex justify-center items-center"
+                  >
+                    <img
+                      src="./Images/icons/js-svgrepo-com.svg"
+                      alt=""
+                      class="w-[30px] h-[30px]"
+                    />
+                  </div>
+                  <h3 class="text-[.8rem]">javascript</h3>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="h-[50px] w-[50px] bg-blue-200 rounded-full flex justify-center items-center"
+                  >
+                    <img
+                      src="./Images/icons/react.png"
+                      alt=""
+                      class="w-[30px] h-[30px]"
+                    />
+                  </div>
+                  <h3 class="text-[.8rem]">React</h3>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="h-[50px] w-[50px] bg-purple-300 rounded-full flex justify-center items-center"
+                  >
+                    <img
+                      src="./Images/icons/redux.svg"
+                      alt=""
+                      class="w-[30px] h-[30px]"
+                    />
+                  </div>
+                  <h3 class="text-[.8rem]">Redux</h3>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="h-[50px] w-[50px] bg-red-300 rounded-full flex justify-center items-center"
+                  >
+                    <img
+                      src="./Images/icons/react-query-seeklogo.svg"
+                      alt=""
+                      class="w-[30px] h-[30px]"
+                    />
+                  </div>
+                  <h3 class="text-[.8rem]">ReactQuery</h3>
+                </div>
+              </div>
+
+              <div class="flex gap-2 justify-center items-center">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="h-[50px] w-[50px] bg-pink-300 rounded-full flex justify-center items-center"
+                  >
+                    <img
+                      src="./Images/icons/framer-motion.svg"
+                      alt=""
+                      class="w-[30px] h-[30px]"
+                    />
+                  </div>
+                  <h3 class="text-[.8rem]">FramerMotion</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center gap-6">
+            <h3 class="text-[1.5rem]">Backend</h3>
+            <div
+              class="flex gap-4 w-[210px] items-center justify-center flex-wrap text-center"
+            >
+              <div class="flex flex-col">
+                <div
+                  class="h-[50px] w-[50px] bg-green-200 rounded-full flex justify-center items-center"
+                >
+                  <img
+                    src="./Images/icons/nodejs.svg"
+                    alt=""
+                    class="w-[30px] h-[30px]"
+                  />
+                </div>
+                <h3 class="text-[.8rem]">NodeJs</h3>
+              </div>
+              <div class="flex gap-2">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="h-[50px] w-[50px] bg-gray-300 rounded-full flex justify-center items-center"
+                  >
+                    <img
+                      src="./Images/icons/express-svgrepo-com.svg"
+                      alt=""
+                      class="w-[30px] h-[30px]"
+                    />
+                  </div>
+                  <h3 class="text-[.8rem]">Express</h3>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="h-[50px] w-[50px] bg-green-300 rounded-full flex justify-center items-center"
+                  >
+                    <img
+                      src="./Images/icons/mongo-svgrepo-com.svg"
+                      alt=""
+                      class="w-[30px] h-[30px]"
+                    />
+                  </div>
+                  <h3 class="text-[.8rem]">MongoDB</h3>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="h-[50px] w-[50px] bg-yellow-200 rounded-full flex justify-center items-center"
+                  >
+                    <img
+                      src="./Images/icons/firebasse.svg"
+                      alt=""
+                      class="w-[30px] h-[30px]"
+                    />
+                  </div>
+                  <h3 class="text-[.8rem]">firebase</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center gap-6">
+            <h3 class="text-[1.5rem]">Others</h3>
+            <div
+              class="flex gap-4 w-[210px] items-center justify-center flex-wrap text-center"
+            >
+              <div class="flex flex-col">
+                <div
+                  class="h-[50px] w-[50px] bg-gray-300 rounded-full flex justify-center items-center"
+                >
+                  <img
+                    src="./Images/icons/linux-svgrepo-com.svg"
+                    alt=""
+                    class="w-[30px] h-[30px]"
+                  />
+                </div>
+                <h3 class="text-[.8rem]">Linux</h3>
+              </div>
+              <div class="flex gap-2">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="h-[50px] w-[50px] bg-blue-300 rounded-full flex justify-center items-center"
+                  >
+                    <img
+                      src="./Images/icons/typescript-official-svgrepo-com.svg"
+                      alt=""
+                      class="w-[30px] h-[30px]"
+                    />
+                  </div>
+                  <h3 class="text-[.8rem]">TypeScript</h3>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="h-[50px] w-[50px] bg-red-300 rounded-full flex justify-center items-center"
+                  >
+                    <img
+                      src="./Images/icons/git-svgrepo-com.svg"
+                      alt=""
+                      class="w-[30px] h-[30px]"
+                    />
+                  </div>
+                  <h3 class="text-[.8rem]">Git</h3>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="h-[50px] w-[50px] bg-red-300 rounded-full flex justify-center items-center"
+                  >
+                    <img
+                      src="./Images/icons/postman-icon-svgrepo-com.svg"
+                      alt=""
+                      class="w-[30px] h-[30px]"
+                    />
+                  </div>
+                  <h3 class="text-[.8rem]">Postman</h3>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="h-[50px] w-[50px] bg-purple-300 rounded-full flex justify-center items-center"
+                  >
+                    <img
+                      src="./Images/icons/vite-svgrepo-com.svg"
+                      alt=""
+                      class="w-[30px] h-[30px]"
+                    />
+                  </div>
+                  <h3 class="text-[.8rem]">Vite</h3>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="h-[50px] w-[50px] bg-red-300 rounded-full flex justify-center items-center"
+                  >
+                    <img
+                      src="./Images/icons/jest-svgrepo-com.svg"
+                      alt=""
+                      class="w-[30px] h-[30px]"
+                    />
+                  </div>
+                  <h3 class="text-[.8rem]">Jest</h3>
+                </div>
+              </div>
+
+              <div class="flex gap-2 justify-center items-center">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="h-[50px] w-[50px] bg-purple-300 rounded-full flex justify-center items-center"
+                  >
+                    <img
+                      src="./Images/icons/heroku-svgrepo-com.svg"
+                      alt=""
+                      class="w-[30px] h-[30px]"
+                    />
+                  </div>
+                  <h3 class="text-[.8rem]">Heroku</h3>
+                </div>
+              </div>
+
+              <div class="flex gap-2 justify-center items-center">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="h-[50px] w-[50px] bg-gray-300 rounded-full flex justify-center items-center"
+                  >
+                    <img
+                      src="./Images/icons/github-142-svgrepo-com.svg"
+                      alt=""
+                      class="w-[30px] h-[30px]"
+                    />
+                  </div>
+                  <h3 class="text-[.8rem]">GitHub</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="px-8 md:px-12 lg:px-18  flex flex-col lg:flex-row gap-24 justify-center items-center mb-[40px] "
+    >
+      <img src="./Images/Chat.gif" alt="" class="lg:w-[480px] lg:h-[480px]" />
+
+      <form
+      method="post"
+      action="https://formspree.io/f/xpwavjvy"
+      id="contactForm"
+      class="gap-5 flex flex-col w-full max-w-lg mx-auto"
+    >
+      <p class="text-4xl font-bold mb-4">Let's Talk!</p>
+    
+      <!-- Name and Email -->
+      <div class="flex gap-4 flex-col md:flex-row">
+        <input
+          name="Name"
+          id="name"
+          type="text"
+          class="border border-gray-300 rounded-lg p-4 w-full focus:outline-none focus:ring-2 focus:ring-black focus:border-black"
+          placeholder="Your name"
+          required
+        />
+        <input
+          type="email"
+          name="Email"
+          id="email"
+          class="border border-gray-300 rounded-lg p-4 w-full focus:outline-none focus:ring-2 focus:ring-black focus:border-black"
+          placeholder="Your email"
+          required
+        />
+      </div>
+    
+      <!-- Message -->
+      <textarea
+        name="message"
+        id="message"
+        class="border border-gray-300 rounded-lg p-4 w-full focus:outline-none focus:ring-2 focus::border-black h-40 resize-y  focus:ring-black focus:border-black"
+        placeholder="Your message (max 5000 characters)"
+        maxlength="5000"
+        required
+      ></textarea>
+    
+      <!-- Submit Button -->
+      <button
+        type="submit"
+        class="bg-black text-white rounded-lg p-4 mt-4 hover:bg-gray-800 transition duration-300"
+        id="submit"
+      >
+        Submit
+      </button>
+    </form>
+    
+    </section>
+    
+    <footer
+      class="border-[1px] border-black border-b-0 border-r-0 border-l-0 h-[15vh] flex justify-between items-center px-8 md:px-12 lg:px-18 "
+    >
+      <h3 class="text-[1.2rem]">SuperSaiyanSkai</h3>
+
+      <ul class="flex items-center justify-center gap-4">
+        <li>
+          <img
+            src="./Images/icons/gmail-svgrepo-com.svg"
+            alt=""
+            class="w-[30px] h-[30px]"
+          />
+        </li>
+        <li>
+          <img src="./Images/icons/x.png" alt="" class="w-[25px] h-[25px]" />
+        </li>
+        <li>
+          <img
+            src="./Images/icons/linkedin.png "
+            alt=""
+            class="w-[25px] h-[25px]"
+          />
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+  <script src="form.js"></script>
+</html>
