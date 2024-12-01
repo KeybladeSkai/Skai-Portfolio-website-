@@ -801,8 +801,16 @@ video {
   gap: 2.5rem;
 }
 
+.gap-16{
+  gap: 4rem;
+}
+
 .gap-2{
   gap: 0.5rem;
+}
+
+.gap-20{
+  gap: 5rem;
 }
 
 .gap-24{
@@ -823,26 +831,6 @@ video {
 
 .gap-8{
   gap: 2rem;
-}
-
-.gap-12{
-  gap: 3rem;
-}
-
-.gap-20{
-  gap: 5rem;
-}
-
-.gap-14{
-  gap: 3.5rem;
-}
-
-.gap-1{
-  gap: 0.25rem;
-}
-
-.gap-16{
-  gap: 4rem;
 }
 
 .overflow-clip{
@@ -1150,8 +1138,12 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .sm\:gap-6{
-    gap: 1.5rem;
+  .sm\:gap-10{
+    gap: 2.5rem;
+  }
+
+  .sm\:gap-8{
+    gap: 2rem;
   }
 
   .sm\:object-contain{
@@ -1202,6 +1194,10 @@ video {
 
   .lg\:gap-24{
     gap: 6rem;
+  }
+
+  .lg\:gap-6{
+    gap: 1.5rem;
   }
 
   .lg\:object-cover{
