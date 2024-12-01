@@ -28,9 +28,6 @@ a {
 .clamp-p-about {
   font-size: clamp(2rem, 1vw, 2rem);
 }
-/* .clamp-p2-about{
-  font-size: clamp(2rem, 2vw, 4rem);
-} */
 
 .boxshadow {
   box-shadow: 4px 5px 1px 1px black;
